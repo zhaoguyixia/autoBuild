@@ -1,0 +1,16 @@
+# xcode命令自动打包，生成sliceDemo.xcarchive文件
+# sliceDemo 项目名
+# build 存放打包后文件的文件夹名
+# build后面的sliceDemo，xcarchive文件名
+# 如果使用了pod管理第三方库，则打包时，使用 -workspace 项目名称.xcworkspace
+xcodebuild archive -project sliceDemo.xcodeproj
+                   -configuration Debug
+                   -scheme sliceDemo
+                   -archivePath /Users/wantexe/Desktop/build/sliceDemo
+
+# 将打包生成的xcarchive文件生成ipa文件
+# ExportOptions.plist必须有
+# ./一起放在当前文件夹下
+xcodebuild -exportArchive -archivePath sliceDemo.xcarchive
+                          -exportPath ./
+                          -exportOptionsPlist ExportOptions.plist

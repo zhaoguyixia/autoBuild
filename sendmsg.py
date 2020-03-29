@@ -8,10 +8,11 @@ import subprocess
 import tkMessageBox
 from email.mime.text import MIMEText
 
-mail_user = '1152650004@qq.com'      # 发送方邮箱
-mail_pass = 'jkzkaniftcrxidga'       # 填入发送方邮箱的授权码  百度:QQ邮箱授权码如何获取 查看教程
-mail_namelist = ["2130188494@qq.com", "2972440896@qq.com"]     # 收件人邮箱
-fir_token = '66a61e05450f6940e34e4b0c4346243c'
+mail_user = 'xx'      # 发送方邮箱
+mail_pass = 'xx'       # 填入发送方邮箱的授权码  百度:QQ邮箱授权码如何获取 查看教程
+mail_namelist = ["xx", "xx"]     # 收件人邮箱，可以选多个
+# 这个是上传到fir上需要的token，自行百度
+fir_token = 'xx'
 
 
 # 上传ipa

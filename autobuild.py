@@ -53,7 +53,7 @@ class XcodeAutoBuildDialog(Tkinter.Frame):
         path = xcode.auto_build()
         suc = sendmsg.send_ipa(path)
         if suc == 1:
-            sendmsg.send_qq_email("哈哈", "打包成功了，快去更新吧，更新地址http://fir.zhaoguyixia.club/274e")
+            sendmsg.send_qq_email("哈哈", "打包成功了，快去更新吧，更新地址")
         else:
             sendmsg.send_qq_email("哎", "上传失败，快看看什么问题吧")
 
